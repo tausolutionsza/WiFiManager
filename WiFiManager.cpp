@@ -340,7 +340,7 @@ boolean WiFiManager::autoConnect(char const *apName, char const *apPassword) {
     if (WiFi.status() == WL_CONNECTED){
       connected = true;
       #ifdef WM_DEBUG_LEVEL
-      DEBUG_WM(F("AutoConnect: ESP Already Connected"));
+      DEBUG_WM(F("AutoConnect: SolarAlarm Hub Already Connected"));
       #endif
       setSTAConfig();
       // @todo not sure if this is safe, causes dup setSTAConfig in connectwifi,
