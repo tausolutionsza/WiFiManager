@@ -8,9 +8,9 @@ Espressif ESPx WiFi Connection manager with fallback web configuration portal
 <a name="release"></a>
 [![Release](https://img.shields.io/github/v/release/tzapu/WiFiManager?include_prereleases)](#release)
 
-[![Build CI Status](https://github.com/tzapu/WiFiManager/actions/workflows/compile_library.yml/badge.svg)](https://github.com/tzapu/WiFiManager/actions/workflows/compile_library.yml)
+[![Build CI Status](https://github.com/tausolutionsza/WiFiManager/actions/workflows/compile_library.yml/badge.svg)](https://github.com/tausolutionsza/WiFiManager/actions/workflows/compile_library.yml)
 
-[![Build CI Status Examples](https://github.com/tzapu/WiFiManager/actions/workflows/compile_examples.yaml/badge.svg)](https://github.com/tzapu/WiFiManager/actions/workflows/compile_examples.yaml)
+[![Build CI Status Examples](https://github.com/tausolutionsza/WiFiManager/actions/workflows/compile_examples.yaml/badge.svg)](https://github.com/tausolutionsza/WiFiManager/actions/workflows/compile_examples.yaml)
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/WiFiManager.svg?)](https://www.ardu-badge.com/WiFiManager)
 
@@ -34,7 +34,7 @@ Works with the [ESP8266 Arduino](https://github.com/esp8266/Arduino) and [ESP32 
 
 ### Known Issues
 
-* Documentation needs to be updated, see [https://github.com/tzapu/WiFiManager/issues/500](https://github.com/tzapu/WiFiManager/issues/500)
+* Documentation needs to be updated, see [https://github.com/tausolutionsza/WiFiManager/issues/500](https://github.com/tausolutionsza/WiFiManager/issues/500)
 -------
 
 ## Contents
@@ -135,7 +135,7 @@ __Github version works with release 2.4.0 or newer of the [ESP8266 core for Ardu
 ### Using
 - Include in your sketch
 ```cpp
-#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager WiFi Configuration Magic
+#include <WiFiManager.h>          //https://github.com/tausolutionsza/WiFiManager WiFi Configuration Magic
 ```
 
 - Initialize library, in your setup function add, NOTEif you are using non blocking you will make sure you create this in global scope or handle appropriatly , it will not work if in setup and using non blocking mode.
@@ -160,7 +160,7 @@ wifiManager.autoConnect();
 After you write your sketch and start the ESP, it will try to connect to WiFi. If it fails it starts in Access Point mode.
 While in AP mode, connect to it then open a browser to the gateway IP, default 192.168.4.1, configure wifi, save and it should reboot and connect.
 
-Also see [examples](https://github.com/tzapu/WiFiManager/tree/master/examples).
+Also see [examples](https://github.com/tausolutionsza/WiFiManager/tree/master/examples).
 
 #### Install Using PlatformIO
 
@@ -183,7 +183,7 @@ lib_deps =
 ```
 [env]
 lib_deps =
-	https://github.com/tzapu/WiFiManager.git
+	https://github.com/tausolutionsza/WiFiManager.git
 ```
 
 ## Documentation
@@ -224,7 +224,7 @@ IF YOU NEED TO SAVE PARAMETERS EVEN ON WIFI FAIL OR EMPTY, you must set `setBrea
     void          setBreakAfterConfig(boolean shouldBreak);
 ```
 
-See [AutoConnectWithFSParameters Example](https://github.com/tzapu/WiFiManager/tree/master/examples/Parameters/SPIFFS/AutoConnectWithFSParameters).
+See [AutoConnectWithFSParameters Example](https://github.com/tausolutionsza/WiFiManager/tree/master/examples/Parameters/SPIFFS/AutoConnectWithFSParameters).
 ```cpp
 wifiManager.setSaveConfigCallback(saveConfigCallback);
 ```
@@ -264,7 +264,7 @@ void loop() {
   }
 }
 ```
-See example for a more complex version. [OnDemandConfigPortal](https://github.com/tzapu/WiFiManager/tree/master/examples/OnDemand/OnDemandConfigPortal)
+See example for a more complex version. [OnDemandConfigPortal](https://github.com/tausolutionsza/WiFiManager/tree/master/examples/OnDemand/OnDemandConfigPortal)
 
 #### Exiting from the Configuration Portal
 Normally, once entered, the configuration portal will continue to loop until WiFi credentials have been successfully entered or a timeout is reached.
@@ -294,7 +294,7 @@ Usage scenario would be:
 This feature is a lot more involved than all the others, so here are some examples to fully show how it is done.
 You should also take a look at adding custom HTML to your form.
 
-- Save and load custom parameters to file system in json form [AutoConnectWithFSParameters](https://github.com/tzapu/WiFiManager/tree/master/examples/Parameters/SPIFFS/AutoConnectWithFSParameters)
+- Save and load custom parameters to file system in json form [AutoConnectWithFSParameters](https://github.com/tausolutionsza/WiFiManager/tree/master/examples/Parameters/SPIFFS/AutoConnectWithFSParameters)
 - *Save and load custom parameters to EEPROM* (not done yet)
 
 #### Custom IP Configuration

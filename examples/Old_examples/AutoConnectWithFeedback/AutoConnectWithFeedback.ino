@@ -1,4 +1,4 @@
-#include <WiFiManager.h> // https://github.com/tzapu/WiFiManager
+#include <WiFiManager.h> // https://github.com/tausolutionsza/WiFiManager
 
 void configModeCallback (WiFiManager *myWiFiManager) {
   Serial.println("Entered config mode");

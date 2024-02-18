@@ -1,4 +1,4 @@
-#include <WiFiManager.h> // https://github.com/tzapu/WiFiManager
+#include <WiFiManager.h> // https://github.com/tausolutionsza/WiFiManager
 WiFiManager wm;
 WiFiManagerParameter custom_mqtt_server("server", "mqtt server", "", 40);
 
